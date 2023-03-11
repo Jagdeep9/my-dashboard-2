@@ -3,7 +3,7 @@ import Dashboard from '../Dashboard'
 import Box from '@mui/material/Box';
 import Calculator from './calculator/Calculator';
 import AddNotes from './AddNotes';
-export default function Tools() {
+export default function Tools() { //we have created 2 tool calculator and addnotes and calling both of them on the same page
   return (
     <>
     <Box sx={{ display: "flex" }}>

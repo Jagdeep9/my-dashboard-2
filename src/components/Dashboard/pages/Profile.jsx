@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import {app,auth} from '../../../firebase';
 //import { useEffect } from 'react'
 
-export default function Profile() {
+export default function Profile() {//in this we are fetching the current user data and show them on the profile that which user is logged in 
   const [user, setUser] = useState(null)
 useEffect(() => {
   setUser(auth.currentUser)

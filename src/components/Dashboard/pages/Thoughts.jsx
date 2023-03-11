@@ -3,7 +3,7 @@ import Dashboard from '../Dashboard'
 import Box from '@mui/material/Box';
 import  { useState, useEffect } from 'react';
 
-export default function Thoughts() {
+export default function Thoughts() {// in this we are fetching random thoughts from api to show them on the button click
 
     const url = "https://api.quotable.io/random";
 

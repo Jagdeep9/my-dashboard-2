@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash} from '@fortawesome/free-solid-svg-icons'
 import { faAdd} from '@fortawesome/free-solid-svg-icons'
 
-function AddNotes() {
+function AddNotes() {//in this we are saving the notes provided by the user and also give the user to delete the comment
   const [notes, setNotes] = useState([]);
   const placeholder = 'Your message';
   const noteInput = useRef(null);

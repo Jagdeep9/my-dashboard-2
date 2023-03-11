@@ -7,7 +7,7 @@ import { auth } from "../../firebase";
 
 import styles from "./Login.module.css";
 
-function Login() {
+function Login() {//in this we are logging in the old users and leting them log in using thier email and password
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",

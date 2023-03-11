@@ -3,7 +3,7 @@ import Dashboard from '../Dashboard'
 import Box from '@mui/material/Box';
 import  { useState, useEffect } from 'react';
 
-export default function Newsfeed() {
+export default function Newsfeed() {//in this we are using new api to fetch news and show the news in the dashboard 
     const [news, setNews] = useState([]);
 
     useEffect(() => {

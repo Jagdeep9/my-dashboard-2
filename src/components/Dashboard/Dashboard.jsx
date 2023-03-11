@@ -26,14 +26,11 @@ import {useNavigate} from 'react-router-dom';
 const drawerWidth = 240;
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
+ 
   window?: () => Window;
 }
 
-export default function Dashboard(props: Props) {
+export default function Dashboard(props: Props) {//this is the main dashboard in which all the linking from different assests is linked up, also drawer ,app bar,navigation.
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);    
 
@@ -167,14 +164,14 @@ export default function Dashboard(props: Props) {
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+        
         <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: 'block', sm: 'none' }, 

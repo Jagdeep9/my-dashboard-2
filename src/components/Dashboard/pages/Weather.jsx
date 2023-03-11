@@ -6,7 +6,7 @@ import axios from 'axios';
 import './Weather.css';
 
 
-export default function Weather() {
+export default function Weather() {//in this we have used a weather api to show the weather of the locations searched from the search bar
     const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 

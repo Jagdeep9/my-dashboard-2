@@ -7,7 +7,7 @@ import { auth } from "../../firebase";
 
 import styles from "./Signup.module.css";
 
-function Signup() {
+function Signup() {//In this function we have linked the authentication of firebase so that when a new user loggs in we can get his data and make a profile of the user in the firebase
   const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",
